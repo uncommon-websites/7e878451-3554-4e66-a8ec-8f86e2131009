@@ -1,28 +1,28 @@
 <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col items-center">
     <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-12 max-w-xl tracking-tight">
-        Posts are the sweet spots<br />
-        between chat and docs
+        Your miles tracked,<br />
+        your achievements celebrated
     </h2>
 
     <div class="relative w-full max-w-2xl">
-        <!-- Mock Post Header -->
+        <!-- Mock Achievement Card -->
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-4 flex items-center gap-4">
-            <div class="w-10 h-10 rounded-full bg-gray-200 overflow-hidden flex-shrink-0">
-                <img src="https://i.pravatar.cc/150?u=brian" alt="Brian" class="w-full h-full object-cover" />
+            <div class="w-10 h-10 rounded-full bg-primary-100 overflow-hidden flex-shrink-0 flex items-center justify-center">
+                <span class="text-2xl">🏆</span>
             </div>
             <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 mb-0.5">
-                    <span class="font-semibold text-gray-900 truncate">What we're working on · September 2024</span>
+                    <span class="font-semibold text-gray-900 truncate">500,000 Miles Milestone Achieved</span>
                 </div>
                 <div class="flex items-center gap-2 text-sm text-gray-500">
-                    <span class="font-medium text-gray-900">34</span>
-                    <span class="truncate">Brian: Hey everyone, thanks for joining this space and sharing...</span>
+                    <span class="font-medium text-gray-900">This Week</span>
+                    <span class="truncate">You're now ranked #847 nationally. Keep pushing!</span>
                 </div>
             </div>
             <div class="flex-shrink-0">
-                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-gray-50 border border-gray-200 text-xs font-medium text-gray-600">
-                    <svg class="w-3 h-3 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-                    Product
+                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-primary-50 border border-primary-200 text-xs font-medium text-primary-600">
+                    <svg class="w-3 h-3 text-primary-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Milestone
                 </span>
             </div>
         </div>
@@ -38,7 +38,7 @@
                         </marker>
                     </defs>
                 </svg>
-                <span class="absolute top-8 left-1/2 -translate-x-1/2 text-gray-400 font-handwriting text-sm whitespace-nowrap font-serif italic">See a real post</span>
+                <span class="absolute top-8 left-1/2 -translate-x-1/2 text-gray-400 font-handwriting text-sm whitespace-nowrap font-serif italic">Automatic tracking</span>
             </div>
         </div>
     </div>

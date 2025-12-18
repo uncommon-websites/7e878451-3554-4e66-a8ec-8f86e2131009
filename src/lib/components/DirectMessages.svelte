@@ -1,7 +1,7 @@
 <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-16 max-w-2xl mx-auto tracking-tight">
-        Direct messages and quick<br />
-        calls for everything in-between
+        Connect with fellow drivers<br />
+        and share the road together
     </h2>
 
     <div class="relative max-w-5xl mx-auto h-[400px]">

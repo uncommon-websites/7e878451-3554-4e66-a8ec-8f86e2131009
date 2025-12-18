@@ -1,7 +1,7 @@
 <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-16 max-w-2xl mx-auto tracking-tight">
-        Connect the dots between posts<br />
-        and easily reference past decisions
+        Track your progress over time<br />
+        and celebrate every milestone
     </h2>
 
     <div class="relative max-w-4xl mx-auto mb-16">
@@ -15,32 +15,32 @@
                     </div>
                     <div class="flex-1 space-y-2">
                         <div class="flex items-baseline gap-2">
-                            <span class="font-semibold text-gray-900">Dan</span>
-                            <span class="text-xs text-gray-400">2m</span>
+                            <span class="font-semibold text-gray-900">Your Progress</span>
+                            <span class="text-xs text-gray-400">This Month</span>
                         </div>
                         <div class="space-y-2">
-                            <div class="h-2 w-full bg-gray-100 rounded-full"></div>
-                            <div class="h-2 w-5/6 bg-gray-100 rounded-full"></div>
-                            <div class="h-2 w-4/6 bg-gray-100 rounded-full"></div>
+                            <div class="text-sm text-gray-700">12,847 miles driven</div>
+                            <div class="text-sm text-gray-700">Ranked #847 nationally (+12 spots)</div>
+                            <div class="text-sm text-gray-700">3 new achievements unlocked</div>
                         </div>
 
                         <!-- Reactions -->
                         <div class="flex gap-2 mt-4">
                             <button class="flex items-center gap-1 px-2 py-1 rounded-full bg-gray-50 border border-gray-200 text-xs text-gray-600">
-                                <span>👍</span> 3
+                                <span>🏆</span> 24
                             </button>
                             <button class="flex items-center gap-1 px-2 py-1 rounded-full bg-gray-50 border border-gray-200 text-xs text-gray-600">
-                                <span>🎉</span> 1
+                                <span>🔥</span> 18
                             </button>
                             <button class="flex items-center gap-1 px-2 py-1 rounded-full bg-gray-50 border border-gray-200 text-xs text-gray-600">
-                                <span>🔥</span> 1
+                                <span>💪</span> 12
                             </button>
                         </div>
 
-                        <!-- Backlink Notification -->
-                        <div class="mt-6 flex items-start gap-3 p-3 bg-gray-50 rounded-lg border border-gray-100 relative">
+                        <!-- Milestone Notification -->
+                        <div class="mt-6 flex items-start gap-3 p-3 bg-primary-50 rounded-lg border border-primary-100 relative">
                             <div class="absolute -left-20 top-1/2 -translate-y-1/2 flex items-center gap-2">
-                                <span class="font-handwriting text-gray-400 text-sm italic text-right w-16 leading-tight">automatic backlinks</span>
+                                <span class="font-handwriting text-gray-400 text-sm italic text-right w-16 leading-tight">milestone tracking</span>
                                 <svg width="40" height="20" viewBox="0 0 40 20" fill="none" class="text-gray-300">
                                     <path d="M0,10 Q20,10 35,10" stroke="currentColor" stroke-width="1.5" marker-end="url(#arrowhead-sm)" />
                                     <defs>
@@ -50,19 +50,19 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <svg class="w-4 h-4 text-gray-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                            <svg class="w-4 h-4 text-primary-400 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                             <div class="text-sm text-gray-600">
-                                <span class="font-semibold text-gray-900">Ryan</span> referenced this in <span class="font-medium text-gray-900">Landing page refresh S24</span>
+                                You're <span class="font-semibold text-gray-900">500,000 miles</span> away from the <span class="font-medium text-gray-900">Million Mile Club</span>
                             </div>
                         </div>
 
-                        <!-- Reply Input -->
+                        <!-- Comment Input -->
                         <div class="mt-4 flex gap-3 items-center">
                             <div class="w-6 h-6 rounded-full bg-gray-200 overflow-hidden">
                                 <img src="https://i.pravatar.cc/150?u=me" alt="Me" class="w-full h-full object-cover" />
                             </div>
                             <div class="flex-1">
-                                <input type="text" placeholder="Reply" class="w-full bg-transparent text-sm placeholder-gray-400 focus:outline-none" />
+                                <input type="text" placeholder="Share your thoughts..." class="w-full bg-transparent text-sm placeholder-gray-400 focus:outline-none" />
                             </div>
                         </div>
                     </div>
@@ -71,31 +71,31 @@
 
             <!-- Sidebar (Context) -->
             <div class="w-64 border-l border-gray-200 bg-gray-50 p-4 hidden md:block">
-                <div class="text-xs font-medium text-gray-400 mb-4">Posts</div>
+                <div class="text-xs font-medium text-gray-400 mb-4">Recent Achievements</div>
                 <div class="space-y-3">
                     <div class="flex items-center gap-2 text-sm text-gray-600">
-                        <svg class="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                        Mobile app kickoff
+                        <svg class="w-4 h-4 text-primary-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        500K Miles Badge
                     </div>
                     <div class="flex items-center gap-2 text-sm text-gray-600">
-                        <svg class="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                        Shipped: new typeahead...
+                        <svg class="w-4 h-4 text-primary-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        90-Day Safety Streak
                     </div>
                     <div class="flex items-center gap-2 text-sm text-gray-600">
-                        <svg class="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                        NYC team offsite
+                        <svg class="w-4 h-4 text-primary-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                        Top 1000 National
                     </div>
                 </div>
 
-                <div class="text-xs font-medium text-gray-400 mt-8 mb-4">People</div>
+                <div class="text-xs font-medium text-gray-400 mt-8 mb-4">Following</div>
                 <div class="space-y-3">
                     <div class="flex items-center gap-2 text-sm text-gray-600">
-                        <img src="https://i.pravatar.cc/150?u=alex" class="w-5 h-5 rounded-full" />
-                        Alexandru
+                        <img src="https://i.pravatar.cc/150?u=mike" class="w-5 h-5 rounded-full" />
+                        Mike 'Roadking'
                     </div>
                     <div class="flex items-center gap-2 text-sm text-gray-600">
-                        <img src="https://i.pravatar.cc/150?u=nick" class="w-5 h-5 rounded-full" />
-                        Nick
+                        <img src="https://i.pravatar.cc/150?u=sarah" class="w-5 h-5 rounded-full" />
+                        Sarah 'Highway Queen'
                     </div>
                 </div>
             </div>
@@ -105,11 +105,11 @@
     <!-- Testimonial -->
     <div class="max-w-3xl mx-auto">
         <blockquote class="text-lg text-gray-500 leading-relaxed">
-            Campsite is like the office for our remote team. It's a delightful space where we jam on ideas and <span class="bg-yellow-100 text-yellow-800 px-1 rounded">keep everyone updated on work-in-progress.</span>
+            Being on the road can be lonely, but HONK! makes me feel part of something bigger. <span class="bg-yellow-100 text-yellow-800 px-1 rounded">Seeing my progress tracked and competing with other drivers keeps me motivated</span> every single day.
         </blockquote>
         <div class="flex items-center gap-3 mt-4">
-            <img src="https://i.pravatar.cc/150?u=ryan" alt="Ryan Olson" class="w-8 h-8 rounded-full bg-gray-200 grayscale" />
-            <div class="text-sm text-gray-500">Ryan Olson, CTO at Retro</div>
+            <img src="https://i.pravatar.cc/150?u=sarah" alt="Sarah Martinez" class="w-8 h-8 rounded-full bg-gray-200 grayscale" />
+            <div class="text-sm text-gray-500">Sarah 'Highway Queen' Martinez, Regional Champion 2024</div>
         </div>
     </div>
 </section>

@@ -1,101 +1,101 @@
 <script lang="ts">
     // Mock data for the interface
     const favorites = [
-        { name: "Ryan Nystrom", icon: "user" },
-        { name: "Nick Holden", icon: "user" },
-        { name: "Founders", icon: "lock" },
-        { name: "Investor update Q3 ...", icon: "doc" }
+        { name: "My Stats", icon: "chart" },
+        { name: "Top Drivers", icon: "trophy" },
+        { name: "Achievements", icon: "star" },
+        { name: "Weekly Challenge", icon: "doc" }
     ];
 
     const channels = [
-        { name: "Daily Updates", icon: "hash", color: "bg-orange-100 text-orange-600" },
-        { name: "Investor updates", icon: "hash", color: "bg-yellow-100 text-yellow-600" },
-        { name: "Product", icon: "hash", color: "bg-blue-100 text-blue-600" },
-        { name: "Engineering", icon: "hash", color: "bg-purple-100 text-purple-600" },
-        { name: "Feedback", icon: "hash", color: "bg-pink-100 text-pink-600" },
-        { name: "GTM", icon: "hash", color: "bg-green-100 text-green-600" },
-        { name: "noob", icon: "hash", color: "bg-gray-100 text-gray-600" },
-        { name: "MRR", icon: "hash", color: "bg-indigo-100 text-indigo-600" },
-        { name: "Calls", icon: "video", color: "bg-red-100 text-red-600" },
-        { name: "Photostream", icon: "image", color: "bg-cyan-100 text-cyan-600" }
+        { name: "National Leaderboard", icon: "trophy", color: "bg-primary-100 text-primary-600" },
+        { name: "Regional Rankings", icon: "hash", color: "bg-yellow-100 text-yellow-600" },
+        { name: "Safety Champions", icon: "shield", color: "bg-blue-100 text-blue-600" },
+        { name: "Million Mile Club", icon: "star", color: "bg-purple-100 text-purple-600" },
+        { name: "Fuel Efficiency", icon: "hash", color: "bg-green-100 text-green-600" },
+        { name: "Long Haul Legends", icon: "hash", color: "bg-orange-100 text-orange-600" },
+        { name: "Team Challenges", icon: "hash", color: "bg-indigo-100 text-indigo-600" },
+        { name: "Route Masters", icon: "hash", color: "bg-cyan-100 text-cyan-600" },
+        { name: "Weekly Winners", icon: "hash", color: "bg-pink-100 text-pink-600" },
+        { name: "Driver Community", icon: "hash", color: "bg-gray-100 text-gray-600" }
     ];
 
     const posts = [
         {
-            title: "Customer feedback: Add support for auto-recording calls",
-            author: "Ryan Nystrom",
-            preview: "This is the fourth time this week, we should do this!",
-            tag: "Plain",
-            tagColor: "text-gray-500",
-            icon: "P",
-            iconBg: "bg-black"
+            title: "🏆 Mike 'Roadking' Johnson hit 1 million miles!",
+            author: "Achievement Unlocked",
+            preview: "Joined the exclusive Million Mile Club. 15 years of safe driving!",
+            tag: "Million Mile",
+            tagColor: "text-purple-500",
+            icon: "👑",
+            iconBg: "bg-primary-600"
         },
         {
-            title: "Q4 initiatives",
-            author: "Brian Lovin",
-            preview: "Hey everyone, I wanted to share what we'll be tackling through the end of the ye...",
-            tag: "Product",
+            title: "You moved up 12 spots on the National Leaderboard",
+            author: "Leaderboard Update",
+            preview: "Great week! You're now ranked #847 nationally with 2,847 miles this week.",
+            tag: "Rankings",
             tagColor: "text-blue-500",
-            icon: "📝",
+            icon: "📈",
             iconBg: "bg-gray-100"
         },
         {
-            title: "Daily update - October 4, 2024",
-            author: "Brian Lovin",
-            preview: "Campbot: What did you work on today?",
-            tag: "Daily updates",
-            tagColor: "text-orange-500",
-            icon: "📅",
+            title: "Weekly Challenge: Coast-to-Coast Sprint",
+            author: "Challenge Active",
+            preview: "3,200 miles in 6 days. 847 drivers competing. You're in 23rd place!",
+            tag: "Challenge",
+            tagColor: "text-primary-500",
+            icon: "🎯",
             iconBg: "bg-white border"
         },
         {
-            title: "Consolidating our Radix component system",
-            author: "Ryan Nystrom",
-            preview: "It's only a matter of time before we fork Radix",
-            tag: "Engineering",
-            tagColor: "text-purple-500",
-            icon: "Rx",
+            title: "Safety Streak: 90 Days Incident-Free",
+            author: "Safety Achievement",
+            preview: "Keep it up! You're on track for the Quarterly Safety Champion badge.",
+            tag: "Safety",
+            tagColor: "text-green-500",
+            icon: "🛡️",
             iconBg: "bg-white border"
         }
     ];
 
     const yesterdayPosts = [
         {
-            title: "Meta ads experiment progress",
-            author: "Nick Holden",
-            preview: "Here's a quick update on our current ads results with three distinct profiles we're tr...",
-            tag: "Q4 Growth",
+            title: "Sarah 'Highway Queen' Martinez: 500K Miles",
+            author: "Achievement Unlocked",
+            preview: "Halfway to the Million Mile Club! Averaging 2,500 miles/week for 4 years straight.",
+            tag: "Milestone",
             tagColor: "text-pink-500",
-            icon: "M",
-            iconBg: "bg-blue-600 text-white"
+            icon: "⭐",
+            iconBg: "bg-primary-600 text-white"
         },
         {
-            title: "Frontier Forest upgraded to Pro with 8 seats (+$160 MRR)",
-            author: "Dan Philibin",
-            preview: "🙌 woo! Glad we finally got them over the finish line.",
-            tag: "Stripe",
+            title: "Regional Rankings Updated: Southwest Division",
+            author: "Leaderboard Update",
+            preview: "Top 10 shuffled! Check your new position and see who's gaining on you.",
+            tag: "Rankings",
             tagColor: "text-indigo-500",
-            icon: "S",
+            icon: "📊",
             iconBg: "bg-indigo-600 text-white"
         },
         {
-            title: "Supporting reminders on chat threads",
-            author: "Ryan Nystrom",
-            preview: "One of the missing features for Campsite is to support reminders on ch...",
-            tag: "Feedback",
+            title: "New Badge Earned: Night Owl (100 overnight hauls)",
+            author: "Badge System",
+            preview: "You've completed 100 overnight long-haul trips. Elite driver status!",
+            tag: "Badge",
             tagColor: "text-yellow-500",
-            icon: "🔔",
+            icon: "🦉",
             iconBg: "bg-yellow-100"
         }
     ];
 
     const team = [
-        { name: "Brian Lovin", status: "Update status", online: true, img: "https://i.pravatar.cc/150?u=brian" },
-        { name: "Dan Philibin", status: "Focus", online: true, img: "https://i.pravatar.cc/150?u=dan" },
-        { name: "Alexandru Turcanu", online: true, img: "https://i.pravatar.cc/150?u=alex" },
-        { name: "Nick Holden", online: true, img: "https://i.pravatar.cc/150?u=nick" },
-        { name: "Ryan Nystrom", online: true, img: "https://i.pravatar.cc/150?u=ryan" },
-        { name: "Paul Boudet", online: false, img: "https://i.pravatar.cc/150?u=paul" }
+        { name: "Mike 'Roadking' J.", status: "On the road", online: true, img: "https://i.pravatar.cc/150?u=mike", rank: "#1" },
+        { name: "Sarah 'Highway Queen' M.", status: "Loading", online: true, img: "https://i.pravatar.cc/150?u=sarah", rank: "#2" },
+        { name: "Tommy 'Iron Horse' R.", online: true, img: "https://i.pravatar.cc/150?u=tommy", rank: "#3" },
+        { name: "Lisa 'Mile Master' K.", online: true, img: "https://i.pravatar.cc/150?u=lisa", rank: "#4" },
+        { name: "Carlos 'El Camino' D.", online: true, img: "https://i.pravatar.cc/150?u=carlos", rank: "#5" },
+        { name: "Jake 'Diesel' P.", online: false, img: "https://i.pravatar.cc/150?u=jake", rank: "#6" }
     ];
 </script>
 
@@ -105,8 +105,8 @@
         <!-- Header -->
         <div class="p-3 border-b border-gray-200 flex items-center justify-between">
             <div class="flex items-center gap-2 font-medium text-gray-900">
-                <div class="w-5 h-5 bg-orange-500 rounded flex items-center justify-center text-white text-xs font-bold">C</div>
-                Acme, Inc.
+                <div class="w-5 h-5 bg-primary-600 rounded flex items-center justify-center text-white text-xs font-bold">H</div>
+                HONK!
                 <svg class="w-3 h-3 text-gray-400" viewBox="0 0 16 16" fill="currentColor"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div class="flex items-center gap-1">
@@ -114,12 +114,12 @@
             </div>
         </div>
 
-        <!-- New Post Button -->
+        <!-- New Trip Button -->
         <div class="px-3 py-2">
             <button class="w-full bg-white border border-gray-200 rounded-md py-1.5 px-3 text-gray-600 font-medium text-left shadow-sm flex items-center gap-2 hover:bg-gray-50">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-                New post
-                <span class="ml-auto text-xs text-gray-400">C</span>
+                Log Trip
+                <span class="ml-auto text-xs text-gray-400">L</span>
             </button>
         </div>
 
@@ -155,10 +155,12 @@
                 <div class="space-y-0.5">
                     {#each favorites as fav}
                         <div class="flex items-center gap-2 px-2 py-1 rounded-md text-gray-600 hover:bg-gray-100">
-                            {#if fav.icon === 'user'}
-                                <div class="w-4 h-4 rounded-full bg-gray-300"></div>
-                            {:else if fav.icon === 'lock'}
-                                <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            {#if fav.icon === 'chart'}
+                                <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+                            {:else if fav.icon === 'trophy'}
+                                <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+                            {:else if fav.icon === 'star'}
+                                <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                             {:else}
                                 <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
                             {/if}
@@ -174,12 +176,14 @@
                 <div class="space-y-0.5">
                     {#each channels as channel}
                         <div class="flex items-center gap-2 px-2 py-1 rounded-md text-gray-600 hover:bg-gray-100">
-                            {#if channel.icon === 'hash'}
-                                <span class="text-gray-400">#</span>
-                            {:else if channel.icon === 'video'}
-                                <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                            {#if channel.icon === 'trophy'}
+                                <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+                            {:else if channel.icon === 'shield'}
+                                <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            {:else if channel.icon === 'star'}
+                                <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                             {:else}
-                                <svg class="w-3.5 h-3.5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                                <span class="text-gray-400">#</span>
                             {/if}
                             <span class="truncate">{channel.name}</span>
                         </div>
@@ -211,9 +215,9 @@
             <div class="flex gap-3 items-start">
                 <div class="w-8 h-8 rounded-full bg-gray-200 flex-shrink-0"></div>
                 <div class="flex-1 relative">
-                    <input type="text" placeholder="What do you want to share?" class="w-full bg-transparent text-gray-900 placeholder-gray-400 focus:outline-none py-1.5" />
+                    <input type="text" placeholder="Share your latest achievement..." class="w-full bg-transparent text-gray-900 placeholder-gray-400 focus:outline-none py-1.5" />
                 </div>
-                <button class="px-3 py-1.5 bg-gray-100 text-gray-400 rounded-md text-xs font-medium">Post</button>
+                <button class="px-3 py-1.5 bg-gray-100 text-gray-400 rounded-md text-xs font-medium">Share</button>
             </div>
         </div>
 
@@ -282,14 +286,14 @@
         <div class="p-3">
              <div class="relative">
                 <svg class="absolute left-2.5 top-2 w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                <input type="text" placeholder="Search people..." class="w-full bg-white border border-gray-200 rounded-md pl-9 pr-3 py-1.5 text-sm placeholder-gray-400 focus:outline-none focus:border-gray-300" />
+                <input type="text" placeholder="Search drivers..." class="w-full bg-white border border-gray-200 rounded-md pl-9 pr-3 py-1.5 text-sm placeholder-gray-400 focus:outline-none focus:border-gray-300" />
             </div>
         </div>
 
         <div class="flex-1 overflow-y-auto px-3 py-2">
             <div class="flex items-center gap-1.5 text-xs text-gray-400 font-medium mb-3">
-                <div class="w-1.5 h-1.5 rounded-full bg-green-500"></div>
-                4 online
+                <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+                Top Drivers
             </div>
             
             <div class="space-y-3">
@@ -302,11 +306,16 @@
                             {/if}
                         </div>
                         <div class="flex-1 min-w-0">
-                            <div class="text-sm font-medium text-gray-900 truncate">{member.name}</div>
+                            <div class="flex items-center gap-1.5">
+                                <span class="text-xs font-bold text-primary-600">{member.rank}</span>
+                                <div class="text-sm font-medium text-gray-900 truncate">{member.name}</div>
+                            </div>
                             {#if member.status}
                                 <div class="text-xs text-gray-500 truncate flex items-center gap-1">
-                                    {#if member.status === 'Focus'}
-                                        <span>🧘</span>
+                                    {#if member.status === 'On the road'}
+                                        <span>🚛</span>
+                                    {:else if member.status === 'Loading'}
+                                        <span>📦</span>
                                     {/if}
                                     {member.status}
                                 </div>
@@ -318,8 +327,8 @@
 
              <div class="mt-6">
                 <div class="flex items-center gap-1.5 text-xs text-gray-400 font-medium mb-3">
-                    <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    Guests
+                    <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    Million Mile Club
                 </div>
             </div>
         </div>

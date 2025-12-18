@@ -2,8 +2,8 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="col-span-2 md:col-span-1">
             <div class="flex items-center gap-2 font-bold text-gray-900 mb-6">
-                <div class="w-5 h-5 bg-black rounded-sm transform rotate-45"></div>
-                Campsite
+                <div class="w-5 h-5 bg-primary-600 rounded-sm"></div>
+                HONK!
             </div>
             <div class="flex gap-4 text-gray-400">
                 <a href="#" class="hover:text-gray-600 transition-colors">
@@ -24,19 +24,28 @@
         <div>
             <h4 class="font-medium text-gray-900 mb-4">Product</h4>
             <ul class="space-y-3 text-sm text-gray-500">
-                <li><a href="#" class="hover:text-gray-900 transition-colors">Blog</a></li>
-                <li><a href="#" class="hover:text-gray-900 transition-colors">Changelog</a></li>
+                <li><a href="#" class="hover:text-gray-900 transition-colors">Features</a></li>
+                <li><a href="#" class="hover:text-gray-900 transition-colors">Leaderboards</a></li>
+                <li><a href="#" class="hover:text-gray-900 transition-colors">Achievements</a></li>
             </ul>
         </div>
 
         <div>
-            <h4 class="font-medium text-gray-900 mb-4">About</h4>
+            <h4 class="font-medium text-gray-900 mb-4">Company</h4>
             <ul class="space-y-3 text-sm text-gray-500">
+                <li><a href="#" class="hover:text-gray-900 transition-colors">About</a></li>
                 <li><a href="#" class="hover:text-gray-900 transition-colors">Contact</a></li>
                 <li><a href="#" class="hover:text-gray-900 transition-colors">Privacy</a></li>
                 <li><a href="#" class="hover:text-gray-900 transition-colors">Terms</a></li>
-                <li><a href="#" class="hover:text-gray-900 transition-colors">DPA</a></li>
-                <li><a href="#" class="hover:text-gray-900 transition-colors">Cookies</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-medium text-gray-900 mb-4">Community</h4>
+            <ul class="space-y-3 text-sm text-gray-500">
+                <li><a href="#" class="hover:text-gray-900 transition-colors">Driver Stories</a></li>
+                <li><a href="#" class="hover:text-gray-900 transition-colors">Top Drivers</a></li>
+                <li><a href="#" class="hover:text-gray-900 transition-colors">Support</a></li>
             </ul>
         </div>
     </div>
